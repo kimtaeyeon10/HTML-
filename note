@@ -1,0 +1,62 @@
+# HTML
+- - -
+###** tips! Emmet
+####1. div>ul>li 입력 후 tab
+'''html
+<div>
+  <ul>
+    <li></li>
+  </ul>
+</div>
+'''
+####2. ul>li*5 입력 후 tab(여러개 반복)
+'''html
+<ul>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+'''
+
+####3. ul>li.item*5 입력 후 tab(클래스 이름 넣기)
+'''html
+<ul>
+  <li class="item></li>
+  <li class="item></li>
+  <li class="item></li>
+  <li class="item></li>
+  <li class="item></li>
+</ul>
+'''
+
+
+##1.Semantics(시맨틱마크업) 
+- '의미론적인'의 뜻을 가지며 마크업이란 HTML태그로 문서를 작성하는 것
+<header>
+<nav> : 페이지에서 내비게이션 링크제공,사이드바, 페이지맨위, 사이트 이동경로..
+<section>
+<article> : 문서내 독립적인 구성, 한 페이지에 여러 개 아티클 가능
+<aside>
+<footer>
+
+
+
+##2.table
+- <td>
+- <tr>
+- <th>
+- <thead> : include table head
+- <tfoot> : include table footer
+- <tbody> : include table body
+
+
+##3.form
+- <label> 요소는 실제로 특정한 입력값이나 form control 및 텍스트와 직접적으로 연결
+- <label>의 for과 <input>의 id값은 같아야한다.(보이지않는 연결고리)
+- 한 페이지에는 한 개의 요소만 지정된 id를 지녀야한다.
+- <input>의 type 속성을 바꿔주며 20개 이상의 종류 생성가능.
+- <input>의 name은 데이터를 서버로 전송될 때 값을 지정하기 위한 것, 서버가 찾으려는 간단한 값
+- <select> value , <input type="radio" value="">의 value
+
