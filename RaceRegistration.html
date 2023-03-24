@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- labe을 쓰는 일은 매우 중요하다 !! -->
+    <h1>Race Registration!</h1>
+    <form action="/register">
+      <div>
+        <label for="first_name">First Name</label>
+        <input id="first_name" type="text" required />
+        <label for="last_name">Last Name</label>
+        <input id="last_n ame" type="text" required />
+      </div>
+
+      Select a Race
+      <!-- radio 버튼의 vlaue는 옵션 각각에 할당된 실제값 -->
+      <div>
+        <input type="radio" id="race_fun" value="race_fun" name="race" />
+        <label for="race_fun">Fun Run 5K</label>
+      </div>
+      <div>
+        <input type="radio" id="race_half" value="race_half" name="race" />
+        <label for="race_half">Half Marathon</label>
+      </div>
+      <div>
+        <input type="radio" id="race_full" value="race_full" name="race" />
+        <label for="race_full">Full Marathon</label>
+      </div>
+      <p>
+        <!-- input의 name은 서버에서 인식하는 이름 -->
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required />
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" required />
+      </p>
+      <label for="age">Select Age Group</label>
+      <select id="age" name="age">
+        <!-- select의 value는 서버가 인식하는 이름 -->
+        <option value="kids">under 18</option>
+        <option value="adult1">18-30</option>
+        <option value="adult2">30-50</option>
+        <option value="senior">50 +</option>
+      </select>
+      <button>register!</button>
+    </form>
+  </body>
+</html>
